@@ -4,6 +4,11 @@ Interactive SPA response for the **Zalo Business Solutions Senior Technical Prod
 
 This project is built as a reviewer-friendly web experience instead of a plain document because the assignment requires product reasoning, platform thinking, and a working web app.
 
+
+## Live Demo
+
+[Open the assignment SPA](https://zalo-senior-tpo-assignment.vercel.app)
+
 ## Live review path
 
 | Route | Purpose |
