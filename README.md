@@ -7,7 +7,7 @@ This project is built as a reviewer-friendly web experience instead of a plain d
 
 ## Live Demo
 
-[Open the assignment SPA](https://zalo-senior-tpo-assignment.vercel.app)
+[Open the assignment SPA](https://zalo-tpo.duypham.me)
 
 ## Live review path
 
