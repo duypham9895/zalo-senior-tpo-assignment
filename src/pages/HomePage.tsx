@@ -30,8 +30,17 @@ const submissionRows = [
   { item: 'Exercise 1 route', purpose: 'Interactive SPA version with diagrams, tables, billing logic, and rollout.', location: <Link to="/exercise-1">/exercise-1</Link> },
   { item: 'Exercise 2 route', purpose: 'Trusted Assets Business Portal artifact, API changes, approval rules, and lifecycle behavior.', location: <Link to="/exercise-2">/exercise-2</Link> },
   { item: 'Exercise 3 route', purpose: 'eVoyage product case study with live app and GitHub links.', location: <Link to="/exercise-3">/exercise-3</Link> },
-  { item: 'eVoyage live app', purpose: 'Working deployed product.', location: <a href="https://evoyagevn.vercel.app/" target="_blank" rel="noreferrer">Live app</a> },
+  { item: 'eVoyage live app', purpose: 'Working deployed product.', location: <a href="https://evoyage.duypham.me/" target="_blank" rel="noreferrer">Live app</a> },
   { item: 'eVoyage GitHub', purpose: 'Source code for technical review.', location: <a href="https://github.com/duypham9895/evoyage" target="_blank" rel="noreferrer">GitHub</a> },
+];
+
+const contactRows = [
+  { item: 'Email', value: <a href="mailto:phamanhduy.sg@gmail.com">phamanhduy.sg@gmail.com</a> },
+  { item: 'GitHub profile', value: <a href="https://github.com/duypham9895" target="_blank" rel="noreferrer">github.com/duypham9895</a> },
+  { item: 'Zalo TPO repository', value: <a href="https://github.com/duypham9895/zalo-senior-tpo-assignment" target="_blank" rel="noreferrer">duypham9895/zalo-senior-tpo-assignment</a> },
+  { item: 'eVoyage repository', value: <a href="https://github.com/duypham9895/evoyage" target="_blank" rel="noreferrer">duypham9895/evoyage</a> },
+  { item: 'LinkedIn', value: <a href="https://www.linkedin.com/in/phamanhduy/" target="_blank" rel="noreferrer">linkedin.com/in/phamanhduy</a> },
+  { item: 'Personal website', value: <a href="https://www.duypham.me/" target="_blank" rel="noreferrer">duypham.me</a> },
 ];
 
 export default function HomePage() {
@@ -55,7 +64,7 @@ export default function HomePage() {
           </p>
           <div className="hero-actions">
             <Button to="/exercise-1">Start with Exercise 1</Button>
-            <Button href="https://evoyagevn.vercel.app/" external variant="secondary">View eVoyage live</Button>
+            <Button href="https://evoyage.duypham.me/" external variant="secondary">View eVoyage live</Button>
           </div>
         </div>
         <div className="hero-panel" aria-label="Assignment map">
@@ -91,6 +100,17 @@ export default function HomePage() {
           ]}
           rows={submissionRows}
           caption="Review package"
+        />
+      </Section>
+
+      <Section eyebrow="Contact and source" title="Where reviewers can reach me and inspect the work">
+        <ComparisonTable
+          columns={[
+            { key: 'item', label: 'Channel' },
+            { key: 'value', label: 'Link' },
+          ]}
+          rows={contactRows}
+          caption="Contact information and repositories"
         />
       </Section>
 

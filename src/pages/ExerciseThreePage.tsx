@@ -32,14 +32,14 @@ export default function ExerciseThreePage() {
           <h1>eVoyage</h1>
           <p className="hero-lead">A working EV trip-planning web app for Vietnam.</p>
           <div className="hero-actions">
-            <Button href="https://evoyagevn.vercel.app/" external>Open live app</Button>
+            <Button href="https://evoyage.duypham.me/" external>Open live app</Button>
             <Button href="https://github.com/duypham9895/evoyage" external variant="secondary">View GitHub</Button>
           </div>
         </div>
         <InsightCard
           title="Direct answer"
           tone="blue"
-          body="For Exercise 3, I chose to submit eVoyage, a real working product I built and deployed. It demonstrates how I identify a user problem, design a product flow, make technical tradeoffs, and ship a web app."
+          body="For Exercise 3, I chose to submit eVoyage, a real working product I built from a problem I personally experienced after I recently took and passed my driver's license test. It demonstrates how I identify a user problem, design a product flow, make technical tradeoffs, and ship a web app."
         />
       </section>
 
@@ -54,20 +54,23 @@ export default function ExerciseThreePage() {
 
       <Section id="why-evoyage" eyebrow="1. Why I chose eVoyage" title="I chose a real shipped product instead of a shallow demo">
         <Callout title="Framing">
-          The original exercise asks for a working web app around an interesting use case. I chose eVoyage because it better demonstrates my strongest fit for ZBS Platform: problem framing, product workflow design, technical execution, integration thinking, and live delivery.
+          The original exercise asks for a working web app around an interesting use case. I chose eVoyage because the problem came from my own driving journey: I recently took and passed my driver's license test, I enjoy driving, and I often rent self-drive cars to practice and improve my skills. When I rented an EV, I could not log into VinFast's official app, so planning charging became harder than it should be.
+        </Callout>
+        <Callout title="Personal motivation">
+          I did not only want to find nearby chargers. Because VinFast cars are still in the free-charging period, I specifically wanted to find official VinFast charging stations. For longer road trips, I also wanted to know which charging stops I should make, what backup options existed, and how the plan changed based on my battery level and vehicle specifications.
         </Callout>
         <div className="grid three">
-          <InsightCard title="Product judgment" body="Start from a real user anxiety: EV drivers are not confident about long-distance trips." />
-          <InsightCard title="Technical ownership" body="Build around maps, route planning, vehicle constraints, charging data, AI assistance, and deployment." />
+          <InsightCard title="Real trigger" body="I enjoy driving and rent self-drive cars to practice. EV rental exposed a practical gap in charger discovery and trip planning." />
+          <InsightCard title="Product judgment" body="Turn a personal pain point into a broader EV driver workflow: route, battery, vehicle specs, charging stops, backups, and confidence." />
           <InsightCard title="Shipping mindset" body="Submit a public working product with live URL and GitHub source, not only a document or mockup." />
         </div>
       </Section>
 
       <Section id="problem" eyebrow="2. Problem I wanted to solve" title="EV drivers need confidence before long-distance travel">
         <div className="grid three">
-          <InsightCard title="Problem" body="Range, charging stops, backup stations, and cost are still unclear for many EV trips in Vietnam." />
-          <InsightCard title="User need" body="Drivers want to know if the trip is safe before they leave, not after battery anxiety appears on the road." />
-          <InsightCard title="Product bet" body="A planning layer can make EV travel feel predictable enough for tourism, family trips, activities, and events." />
+          <InsightCard title="Access gap" body="EV renters may not be able to use the official VinFast app, so they fall back to Google Maps or third-party apps for charger search." />
+          <InsightCard title="User need" body="Drivers want official VinFast stations, charging-stop plans, and backup options before battery anxiety appears on the road." />
+          <InsightCard title="Product bet" body="A planning layer using battery level and vehicle specifications can make EV road trips feel predictable enough for real travel." />
         </div>
       </Section>
 

@@ -64,7 +64,7 @@ Submits **eVoyage**, a real working EV trip-planning product for Vietnam.
 
 Links:
 
-- Live app: https://evoyagevn.vercel.app/
+- Live app: https://evoyage.duypham.me/
 - GitHub: https://github.com/duypham9895/evoyage
 
 Why this project:

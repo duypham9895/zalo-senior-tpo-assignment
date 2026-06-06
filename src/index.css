@@ -321,6 +321,8 @@ p { color: var(--color-muted); line-height: 1.7; }
 @media (max-width: 560px) {
   .page { width: min(100% - 24px, 1180px); padding-top: 32px; }
   .site-header, .site-footer { width: min(100% - 24px, 1180px); }
+  .site-nav { flex-wrap: wrap; overflow-x: visible; gap: 6px; }
+  .nav-link { flex: 1 1 calc(50% - 6px); text-align: center; }
   .hero-copy, .page-hero > div:first-child, .hero-panel, .insight-card, .callout, .flow-block { border-radius: 22px; }
   .hero-copy, .page-hero > div:first-child { padding: 28px 22px; }
   .hero-actions, .footer-links { width: 100%; }

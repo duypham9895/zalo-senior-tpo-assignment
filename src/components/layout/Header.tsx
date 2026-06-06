@@ -25,7 +25,7 @@ export default function Header() {
           </NavLink>
         ))}
       </nav>
-      <Button href="https://evoyagevn.vercel.app/" external size="sm">
+      <Button href="https://evoyage.duypham.me/" external size="sm">
         eVoyage Live
       </Button>
     </header>
