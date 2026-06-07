@@ -120,14 +120,14 @@ export default function ExerciseTwoPage() {
                 </div>
                 <div className="asset-table" role="table" aria-label="Asset library example">
                   <div className="asset-row asset-head" role="row">
-                    <span>Name</span><span>Version</span><span>Status</span><span>Usage</span>
+                    <span role="columnheader">Name</span><span role="columnheader">Version</span><span role="columnheader">Status</span><span role="columnheader">Usage</span>
                   </div>
                   {portalRows.map((row) => (
                     <div className="asset-row" role="row" key={`${row.name}-${row.version}`}>
-                      <span>{row.name}</span>
-                      <span>{row.version}</span>
-                      <span className={`status-badge ${row.status.toLowerCase()}`}>{row.status}</span>
-                      <span>{row.usage}</span>
+                      <span role="cell" data-label="Name">{row.name}</span>
+                      <span role="cell" data-label="Version">{row.version}</span>
+                      <span role="cell" data-label="Status"><span className={`status-badge ${row.status.toLowerCase()}`}>{row.status}</span></span>
+                      <span role="cell" data-label="Usage">{row.usage}</span>
                     </div>
                   ))}
                 </div>
