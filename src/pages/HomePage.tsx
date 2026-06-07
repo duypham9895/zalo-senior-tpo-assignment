@@ -132,15 +132,6 @@ export default function HomePage() {
           </p>
         </div>
       </Section>
-
-      <Section eyebrow="Interview discussion" title="Topics I would like to discuss with the Zalo team">
-        <div className="grid four">
-          <InsightCard title="Pricing packages" body="How Zalo currently thinks about ZBS bundle pricing, volume tiers, and vertical packaging." />
-          <InsightCard title="Template quality" body="How Zalo measures template quality, user complaints, and ecosystem trust." />
-          <InsightCard title="Priority verticals" body="Which customer flows matter most first: e-commerce, logistics, returns, appointments, or customer care." />
-          <InsightCard title="Platform tradeoffs" body="How Zalo balances customer iteration speed with approval safety and operational cost." />
-        </div>
-      </Section>
     </div>
   );
 }
